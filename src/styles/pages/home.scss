@@ -1,0 +1,27 @@
+.home {
+    height: var(--100vh);
+    position: relative;
+    z-index: z('page');
+}
+
+.home__wrapper {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+canvas {
+    padding: 5rem 0;
+    width: 1080px !important;
+    height: 1080px !important;
+
+    @include media('<=phone') {
+        padding: 4rem 0;
+        width: 500px !important;
+        height: 600px !important;
+    }
+}
